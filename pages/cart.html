@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/5ded850d1b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astral Vogue - E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <a href="#"><img src="logo.jpg" class="logo" alt="Astral Vogue Logo" width="70" height="70"></a>
+        <h1>ASTRAL VOGUE</h1>
+        <div>
+            <ul id="navbar2">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i>(<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </div>
+    </section>
+    <main style="padding: 40px 20px; background-color: #f9f9f9;">
+        <section class="cart-section" style="max-width: 1200px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; padding: 30px;">
+            <h1 style="font-size: 2.5rem; text-align: center; margin-bottom: 30px; color: #333;">Your Cart</h1>
+            
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px;">
+                <thead>
+                    <tr style="border-bottom: 2px solid #ddd; text-align: left; font-size: 1.1rem;">
+                        <th style="padding: 10px;">Product</th>
+                        <th style="padding: 10px;">Price</th>
+                        <th style="padding: 10px;">Quantity</th>
+                        <th style="padding: 10px;">Total</th>
+                        <th style="padding: 10px;"></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </tbody>
+            </table>
+    
+            <div class="cart-summary" style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #fafafa; border-radius: 8px; margin-top: 40px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <h3 style="font-size: 1.5rem; font-weight: bold; color: #333;">Total: ₹<span id="cart-total" style="color: #ff6f61;">0.00</span></h3>
+                <button id="checkout-btn" class="cta-button" style="background-color: #ff6f61; color: white; padding: 12px 24px; font-size: 1.1rem; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+                    Checkout
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="section-p1">
+        <div class="col">
+            <img src="logo.jpg" width="70" height="70">
+            <h4>Contact Us</h4>
+            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+            <p><strong>Address:</strong> XYZ Street, Bhopal, Madhya Pradesh</p>
+            <p><strong>Email:</strong> astralvogue@gmail.com</p>
+        </div>
+        <div class="col">
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="appstore icon.jpg">
+                <img src="play store icon.png">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="product.js"></script>
+
+</body>
+</html>
